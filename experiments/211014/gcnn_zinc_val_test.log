@@ -1,0 +1,108 @@
+2021-10-14 15:12:49,068: INFO): Start
+2021-10-14 15:16:23,033: INFO): Start
+2021-10-14 15:17:30,328: INFO): Start
+2021-10-14 15:18:07,946: INFO): Start
+2021-10-14 15:19:14,737: INFO): Start
+2021-10-14 15:21:03,072: INFO): Start
+2021-10-14 15:23:52,912: INFO): Start
+2021-10-14 15:23:59,460: INFO): Config file: config_files/gcnn_zinc.yaml
+2021-10-14 15:23:59,460: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 15:23:59,460: INFO): weights_are_none False
+2021-10-14 15:23:59,460: INFO): Validation mode: val_test
+2021-10-14 15:23:59,460: INFO): output_core: experiments/211014/gcnn_zinc
+2021-10-14 15:23:59,460: INFO): Epochs: 100
+2021-10-14 15:23:59,460: INFO): Positive scaling:    0.500
+2021-10-14 15:23:59,460: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/gcnn_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+graph_filters:
+  adjacency_normalization: true
+  filter_type: first_order
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/gcnn_zinc_data_chk.pkz
+  negative_data_files:
+  - data/zinc15_nondrugs_sample.smiles
+  positive_data_file: data/drugs_approved.smiles
+model_params:
+  activation: relu
+  dropout: 0.22538598591315584
+  dropout_flag: false
+  hidden_units: 128
+  kind: gcnn
+  l2: 0.001
+  lr: 0.001
+  num_inputs: 5
+  num_layers: 4
+  recurrent: false
+vectorization_config:
+  add_connections_to_aromatic_rings: false
+  use_Gasteiger: true
+  use_bond_orders: false
+  use_formal_charge: false
+
+============
+2021-10-14 15:23:59,461: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 15:24:08,725: INFO): Train Y: [1279. 1279.]
+2021-10-14 15:24:09,110: INFO): Model build
+2021-10-14 15:41:54,123: INFO): Val loss: 95-0.476059
+2021-10-14 15:41:54,124: INFO): Testing
+2021-10-14 15:42:04,159: INFO): Model build
+2021-10-14 16:01:38,218: INFO): Saving history...
+2021-10-14 16:01:38,233: INFO): Best CV:
+2021-10-14 16:01:38,234: INFO): epoch: 96
+2021-10-14 16:01:38,234: INFO): train:    0.945 (0.000)   val:   0.872 (0.000)
+2021-10-14 16:01:38,234: INFO): Test:
+2021-10-14 16:01:38,234: INFO): train:    0.934   val:   0.876
+2021-10-14 16:01:38,234: INFO): Resetting model weights from epoch with best cross-val score
+2021-10-14 16:01:39,471: INFO): TPR:    0.904  TNR:    0.848
+2021-10-14 16:01:39,488: INFO): Saving model weights and model
+2021-10-14 16:01:39,682: INFO): EOT, NCR
+2021-10-15 14:08:21,336: INFO): Start
+2021-10-15 14:08:28,594: INFO): Config file: config_files/gcnn_zinc.yaml
+2021-10-15 14:08:28,595: INFO): Force resample/reload: False   Force resplit: False
+2021-10-15 14:08:28,595: INFO): weights_are_none False
+2021-10-15 14:08:28,595: INFO): Validation mode: val_test
+2021-10-15 14:08:28,595: INFO): output_core: experiments/211014/gcnn_zinc
+2021-10-15 14:08:28,595: INFO): Epochs: 100
+2021-10-15 14:08:28,595: INFO): Positive scaling:    0.500
+2021-10-15 14:08:28,595: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/gcnn_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+graph_filters:
+  adjacency_normalization: true
+  filter_type: first_order
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/gcnn_zinc_data_chk.pkz
+  negative_data_files:
+  - data/zinc15_nondrugs_sample.smiles
+  positive_data_file: data/drugs_approved.smiles
+model_params:
+  activation: relu
+  dropout: 0.22538598591315584
+  dropout_flag: false
+  hidden_units: 128
+  kind: gcnn
+  l2: 0.001
+  lr: 0.001
+  num_inputs: 5
+  num_layers: 4
+  recurrent: false
+vectorization_config:
+  add_connections_to_aromatic_rings: false
+  use_Gasteiger: true
+  use_bond_orders: false
+  use_formal_charge: false
+
+============
+2021-10-15 14:08:28,596: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-15 14:08:42,229: INFO): Train Y: [1279. 1279.]

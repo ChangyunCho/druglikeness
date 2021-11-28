@@ -1,0 +1,59 @@
+2021-10-12 16:27:22,722: INFO): Start
+2021-10-12 16:27:23,179: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-12 16:27:23,179: INFO): Force resample/reload: False   Force resplit: False
+2021-10-12 16:27:23,179: INFO): weights_are_none False
+2021-10-12 16:27:23,179: INFO): Validation mode: 5cv_test
+2021-10-12 16:27:23,179: INFO): output_core: experiments/rdkit_ae_zinc
+2021-10-12 16:27:23,179: INFO): Epochs: 100
+2021-10-12 16:27:23,179: INFO): Positive scaling:    0.500
+2021-10-12 16:27:23,179: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-12 16:27:23,180: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-12 16:27:23,182: INFO): Train Y: [1279. 1279.]
+2021-10-12 16:27:23,687: INFO): Model build
+2021-10-12 16:27:46,238: INFO): Train Y: [1279. 1279.]
+2021-10-12 16:27:46,355: INFO): Model build
+2021-10-12 16:28:07,016: INFO): Train Y: [1279. 1279.]
+2021-10-12 16:28:07,153: INFO): Model build
+2021-10-12 16:28:32,345: INFO): Train Y: [1280. 1279.]
+2021-10-12 16:28:32,439: INFO): Model build
+2021-10-12 16:28:54,656: INFO): Train Y: [1279. 1280.]
+2021-10-12 16:28:54,757: INFO): Model build
+2021-10-12 16:29:18,290: INFO): Val loss: 77-     nan
+2021-10-12 16:29:18,291: INFO): Testing
+2021-10-12 16:29:18,364: INFO): Model build
+2021-10-12 16:29:45,790: INFO): Saving history...
+2021-10-12 16:29:45,791: INFO): Best CV:
+2021-10-12 16:29:45,791: INFO): epoch: 78
+2021-10-12 16:29:45,791: INFO): train:    0.799 (0.122)   val:   0.726 (0.092)
+2021-10-12 16:29:45,792: INFO): Test:
+2021-10-12 16:29:45,792: INFO): train:    0.994   val:   0.874
+2021-10-12 16:29:45,792: INFO): Resetting model weights from epoch with best cross-val score
+2021-10-12 16:29:45,861: INFO): TPR:    0.831  TNR:    0.916
+2021-10-12 16:29:45,862: INFO): Saving model weights
+2021-10-12 16:29:45,867: INFO): EOT, NCR

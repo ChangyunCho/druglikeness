@@ -1,0 +1,149 @@
+2021-10-15 13:36:36,510: INFO): Start
+2021-10-15 13:37:21,676: INFO): Start
+2021-10-15 13:37:31,383: INFO): Config file: config_files/my_gcnn_zinc.yaml
+2021-10-15 13:37:31,383: INFO): Force resample/reload: False   Force resplit: False
+2021-10-15 13:37:31,383: INFO): weights_are_none False
+2021-10-15 13:37:31,383: INFO): Validation mode: val_test
+2021-10-15 13:37:31,383: INFO): output_core: experiments/211015/aw_gcnn_zinc
+2021-10-15 13:37:31,383: INFO): Epochs: 100
+2021-10-15 13:37:31,383: INFO): Positive scaling:    0.500
+2021-10-15 13:37:31,383: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211015/aw_gcnn_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+graph_filters:
+  adjacency_normalization: true
+  filter_type: first_order
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211015/aw_gcnn_zinc_data_chk.pkz
+  max_num_atoms: 101
+  negative_data_files:
+  - data/drugs_withdrawn.smiles
+  positive_data_file: data/drugs_approved.smiles
+model_params:
+  activation: relu
+  dropout: 0.22538598591315584
+  dropout_flag: false
+  hidden_units: 128
+  kind: gcnn
+  l2: 0.001
+  lr: 0.001
+  num_inputs: 5
+  num_layers: 4
+  recurrent: false
+vectorization_config:
+  add_connections_to_aromatic_rings: false
+  use_Gasteiger: true
+  use_bond_orders: false
+  use_formal_charge: false
+
+============
+2021-10-15 13:37:31,384: INFO): Y shape:(476, 2)  Y sum:[238. 238.]
+2021-10-15 13:37:31,447: INFO): Train Y: [171. 171.]
+2021-10-15 14:10:26,375: INFO): Start
+2021-10-15 14:10:26,994: INFO): Config file: config_files/my_gcnn_zinc.yaml
+2021-10-15 14:10:26,994: INFO): Force resample/reload: False   Force resplit: False
+2021-10-15 14:10:26,994: INFO): weights_are_none False
+2021-10-15 14:10:26,994: INFO): Validation mode: val_test
+2021-10-15 14:10:26,994: INFO): output_core: experiments/211015/aw_gcnn_zinc
+2021-10-15 14:10:26,994: INFO): Epochs: 100
+2021-10-15 14:10:26,994: INFO): Positive scaling:    0.500
+2021-10-15 14:10:26,994: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211015/aw_gcnn_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+graph_filters:
+  adjacency_normalization: true
+  filter_type: first_order
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211015/aw_gcnn_zinc_data_chk.pkz
+  negative_data_files:
+  - data/drugs_withdrawn.smiles
+  positive_data_file: data/drugs_approved.smiles
+model_params:
+  activation: relu
+  dropout: 0.22538598591315584
+  dropout_flag: false
+  hidden_units: 128
+  kind: gcnn
+  l2: 0.001
+  lr: 0.001
+  num_inputs: 5
+  num_layers: 4
+  recurrent: false
+vectorization_config:
+  add_connections_to_aromatic_rings: false
+  use_Gasteiger: true
+  use_bond_orders: false
+  use_formal_charge: false
+
+============
+2021-10-15 14:10:26,994: INFO): Y shape:(476, 2)  Y sum:[238. 238.]
+2021-10-15 14:10:27,075: INFO): Train Y: [171. 171.]
+2021-10-15 14:10:27,295: INFO): Model build
+2021-10-15 14:17:06,803: INFO): Start
+2021-10-15 14:17:07,433: INFO): Config file: config_files/my_gcnn_zinc.yaml
+2021-10-15 14:17:07,433: INFO): Force resample/reload: False   Force resplit: False
+2021-10-15 14:17:07,433: INFO): weights_are_none False
+2021-10-15 14:17:07,433: INFO): Validation mode: val_test
+2021-10-15 14:17:07,433: INFO): output_core: experiments/211015/aw_gcnn_zinc
+2021-10-15 14:17:07,433: INFO): Epochs: 100
+2021-10-15 14:17:07,433: INFO): Positive scaling:    0.500
+2021-10-15 14:17:07,433: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211015/aw_gcnn_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+graph_filters:
+  adjacency_normalization: true
+  filter_type: first_order
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211015/aw_gcnn_zinc_data_chk.pkz
+  negative_data_files:
+  - data/drugs_withdrawn.smiles
+  positive_data_file: data/my_ap.smiles
+model_params:
+  activation: relu
+  dropout: 0.22538598591315584
+  dropout_flag: false
+  hidden_units: 128
+  kind: gcnn
+  l2: 0.001
+  lr: 0.001
+  num_inputs: 5
+  num_layers: 4
+  recurrent: false
+vectorization_config:
+  add_connections_to_aromatic_rings: false
+  use_Gasteiger: true
+  use_bond_orders: false
+  use_formal_charge: false
+
+============
+2021-10-15 14:17:07,434: INFO): Y shape:(476, 2)  Y sum:[238. 238.]
+2021-10-15 14:17:07,568: INFO): Train Y: [171. 171.]
+2021-10-15 14:17:07,787: INFO): Model build
+2021-10-15 14:19:18,139: INFO): Val loss: 56-0.949490
+2021-10-15 14:19:18,139: INFO): Testing
+2021-10-15 14:19:18,497: INFO): Model build
+2021-10-15 14:21:53,701: INFO): Saving history...
+2021-10-15 14:21:53,704: INFO): Best CV:
+2021-10-15 14:21:53,704: INFO): epoch: 57
+2021-10-15 14:21:53,704: INFO): train:    0.664 (0.000)   val:   0.651 (0.000)
+2021-10-15 14:21:53,704: INFO): Test:
+2021-10-15 14:21:53,704: INFO): train:    0.675   val:   0.542
+2021-10-15 14:21:53,704: INFO): Resetting model weights from epoch with best cross-val score
+2021-10-15 14:21:54,340: INFO): TPR:    1.000  TNR:    0.083
+2021-10-15 14:21:54,341: INFO): Saving model weights and model
+2021-10-15 14:21:54,468: INFO): EOT, NCR

@@ -1,0 +1,580 @@
+2021-10-14 12:45:19,514: INFO): Start
+2021-10-14 12:45:19,847: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 12:45:19,847: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 12:45:19,848: INFO): weights_are_none False
+2021-10-14 12:45:19,848: INFO): Validation mode: val_test
+2021-10-14 12:45:19,848: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 12:45:19,848: INFO): Epochs: 100
+2021-10-14 12:45:19,848: INFO): Positive scaling:    0.500
+2021-10-14 12:45:19,848: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 12:45:19,848: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 12:45:19,851: INFO): Train Y: [1279. 1279.]
+2021-10-14 12:45:20,083: INFO): Model build
+2021-10-14 12:45:57,238: INFO): Start
+2021-10-14 12:45:57,257: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 12:45:57,257: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 12:45:57,257: INFO): weights_are_none False
+2021-10-14 12:45:57,257: INFO): Validation mode: val_test
+2021-10-14 12:45:57,257: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 12:45:57,257: INFO): Epochs: 100
+2021-10-14 12:45:57,257: INFO): Positive scaling:    0.500
+2021-10-14 12:45:57,257: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 12:45:57,258: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 12:45:57,260: INFO): Train Y: [1279. 1279.]
+2021-10-14 12:45:57,351: INFO): Model build
+2021-10-14 12:46:33,221: INFO): Val loss: 27-0.371590
+2021-10-14 12:46:33,221: INFO): Testing
+2021-10-14 12:46:33,343: INFO): Model build
+2021-10-14 12:47:11,695: INFO): Saving history...
+2021-10-14 12:47:11,695: INFO): Best CV:
+2021-10-14 12:47:11,695: INFO): epoch: 28
+2021-10-14 12:47:11,696: INFO): train:    0.984 (0.000)   val:   0.892 (0.000)
+2021-10-14 12:47:11,696: INFO): Test:
+2021-10-14 12:47:11,696: INFO): train:    0.967   val:   0.831
+2021-10-14 12:47:11,696: INFO): Resetting model weights from epoch with best cross-val score
+2021-10-14 12:47:11,822: INFO): TPR:    0.837  TNR:    0.826
+2021-10-14 12:47:11,824: INFO): Saving model weights and model
+2021-10-14 12:47:11,861: INFO): EOT, NCR
+2021-10-14 13:31:50,178: INFO): Start
+2021-10-14 13:31:50,197: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 13:31:50,198: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 13:31:50,198: INFO): weights_are_none False
+2021-10-14 13:31:50,198: INFO): Validation mode: val_test
+2021-10-14 13:31:50,198: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 13:31:50,198: INFO): Epochs: 100
+2021-10-14 13:31:50,198: INFO): Positive scaling:    0.500
+2021-10-14 13:31:50,198: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 13:31:50,200: INFO): X shape:(3554, 184)  X sum:[ 1.50570898e+03 -4.53143707e+02  1.69272461e+02  1.36599655e+02
+  1.06955887e+02 -6.56565628e+01  1.69181152e+02  1.20274567e+02
+  5.17080566e+02  3.83872742e+02  6.62729919e+02  4.99272156e+02
+  8.06823730e+02  6.55326965e+02  2.21095654e+03  7.90880066e+02
+  4.28493848e+03  1.16625099e+02 -4.42920471e+02 -3.26078461e+02
+  7.50034180e+01 -6.31940002e+02 -7.16999329e+02  5.01215820e+01
+  7.11217346e+02  1.48025894e+02 -3.71937378e+02 -9.37901794e+02
+ -1.38968335e+03  1.05519336e+03  8.67069153e+02  1.85027771e+01
+  8.87996979e+01  1.03754701e+27  4.43165833e+02  1.99195114e+02
+  1.40631628e+03  3.36627769e+01 -6.28941650e+02  1.48473450e+02
+ -6.28941650e+02 -3.66477722e+02  7.32325623e+02 -4.68774902e+02
+ -2.43034348e+02 -7.81604309e+01 -8.68624573e+02 -8.20580750e+01
+  1.46567291e+02  2.05146826e+03  4.80561493e+02  1.22333984e+03
+  3.52002991e+02  9.86404114e+02 -6.62682678e+02 -8.69090515e+02
+ -1.26136121e+03  5.11903229e+02  1.87544360e+03  2.69141205e+02
+  1.07841789e+02  9.88320679e+02  2.66980682e+02  7.77772217e+02
+  2.52439331e+02  1.43366895e+03  4.21877716e+02  5.50605888e+01
+ -2.52954590e+02 -7.63828857e+02  1.43651355e+03 -1.36114960e+02
+ -3.26975189e+02 -2.72947052e+02 -2.86072357e+02  2.35721741e+01
+ -2.03182259e+01 -3.68102600e+02 -2.00832779e+02 -3.88375061e+02
+  1.19893762e+03 -2.82621826e+02 -7.98035202e+01 -4.91060730e+02
+  1.32569714e+03  1.16317859e+03 -5.06305580e+01 -9.86003174e+02
+ -3.47519531e+02 -3.28308197e+02 -4.44589996e+02 -1.16810654e+02
+ -1.48103653e+02  1.08243665e+03  4.83063202e+02  1.79324055e+01
+  4.41795807e+02 -8.93328918e+02 -1.56773453e+01 -3.78344238e+02
+  1.24394165e+03 -7.60129547e+00 -2.59319885e+02  5.67981384e+02
+  2.26084888e+03  2.95272656e+03  2.65038037e+03  7.83589783e+02
+  2.60163513e+02 -6.06684143e+02 -1.47960526e+02  8.26101746e+02
+  1.85720923e+03  1.86240112e+03  2.48461594e+02 -1.87371613e+02
+ -1.60016907e+02  2.40258148e+02  1.48571453e+01 -6.54525513e+02
+ -5.56437256e+02  1.72060547e+03  1.11193283e+02  7.04329773e+02
+ -2.60775421e+02 -1.47960526e+02  7.97146912e+02 -2.42431641e+01
+  2.80803223e+02  1.26555954e+02  1.17258264e+03 -6.65895691e+02
+ -5.40124931e+01 -3.92314270e+02 -6.92280762e+02 -1.02363300e+01
+  1.88281265e+02 -6.63487244e+02  1.14659351e+03  2.54075516e+02
+  3.29781281e+02  4.46913788e+02  2.59552765e+02 -3.96465668e+02
+  3.37704407e+02 -9.90321808e+01 -8.57017975e+01 -2.09378265e+02
+ -2.67487202e+01 -2.18988953e+01  6.74085449e+02  4.35559387e+02
+  3.37512622e+03  5.87688538e+02 -2.03904205e+02 -2.22323639e+02
+ -1.64877243e+02 -4.26088196e+02 -3.80827484e+02 -3.30995911e+02
+  1.28596741e+02 -1.71530823e+02  2.14754456e+02 -3.88054169e+02
+  9.96281189e+02  9.35529968e+02  4.00355286e+02  3.61175354e+02
+ -5.57294273e+01 -1.20842804e+02  4.39903320e+02 -2.01939056e+02
+ -2.56417419e+02 -2.32643494e+02 -1.96887375e+02 -2.21051727e+02
+  1.72515030e+02 -5.49224815e+01 -3.10506256e+02 -5.03304863e+01
+ -3.87400330e+02  8.21181702e+02 -2.55476868e+02 -9.36061157e+02]
+2021-10-14 13:31:50,200: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 13:31:50,202: INFO): Train Y: [1279. 1279.]
+2021-10-14 13:31:50,297: INFO): Model build
+2021-10-14 13:35:02,912: INFO): Start
+2021-10-14 13:35:02,931: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 13:35:02,931: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 13:35:02,931: INFO): weights_are_none False
+2021-10-14 13:35:02,931: INFO): Validation mode: val_test
+2021-10-14 13:35:02,931: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 13:35:02,931: INFO): Epochs: 100
+2021-10-14 13:35:02,931: INFO): Positive scaling:    0.500
+2021-10-14 13:35:02,931: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 13:35:02,932: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 13:35:02,934: INFO): Train Y: [1279. 1279.]
+2021-10-14 13:35:03,031: INFO): Model build
+2021-10-14 14:15:42,415: INFO): Start
+2021-10-14 14:15:42,435: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 14:15:42,435: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 14:15:42,435: INFO): weights_are_none False
+2021-10-14 14:15:42,436: INFO): Validation mode: val_test
+2021-10-14 14:15:42,436: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 14:15:42,436: INFO): Epochs: 100
+2021-10-14 14:15:42,436: INFO): Positive scaling:    0.500
+2021-10-14 14:15:42,436: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 14:15:42,436: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 14:15:42,438: INFO): Train Y: [1279. 1279.]
+2021-10-14 14:15:42,534: INFO): Model build
+2021-10-14 14:15:51,501: INFO): Start
+2021-10-14 14:15:51,521: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 14:15:51,521: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 14:15:51,521: INFO): weights_are_none False
+2021-10-14 14:15:51,521: INFO): Validation mode: val_test
+2021-10-14 14:15:51,521: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 14:15:51,522: INFO): Epochs: 100
+2021-10-14 14:15:51,522: INFO): Positive scaling:    0.500
+2021-10-14 14:15:51,522: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 14:15:51,522: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 14:15:51,524: INFO): Train Y: [1279. 1279.]
+2021-10-14 14:15:51,625: INFO): Model build
+2021-10-14 14:16:22,695: INFO): Val loss: 91-0.401620
+2021-10-14 14:16:22,697: INFO): Testing
+2021-10-14 14:16:22,912: INFO): Model build
+2021-10-14 14:16:59,145: INFO): Saving history...
+2021-10-14 14:16:59,146: INFO): Best CV:
+2021-10-14 14:16:59,146: INFO): epoch: 92
+2021-10-14 14:16:59,146: INFO): train:    1.000 (0.000)   val:   0.900 (0.000)
+2021-10-14 14:16:59,146: INFO): Test:
+2021-10-14 14:16:59,146: INFO): train:    0.500   val:   0.500
+2021-10-14 14:16:59,146: INFO): Resetting model weights from epoch with best cross-val score
+2021-10-14 14:16:59,271: INFO): TPR:    0.000  TNR:    1.000
+2021-10-14 14:16:59,273: INFO): Saving model weights and model
+2021-10-14 14:16:59,299: INFO): EOT, NCR
+2021-10-14 14:17:28,614: INFO): Start
+2021-10-14 14:17:28,633: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 14:17:28,633: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 14:17:28,633: INFO): weights_are_none False
+2021-10-14 14:17:28,633: INFO): Validation mode: val_test
+2021-10-14 14:17:28,633: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 14:17:28,633: INFO): Epochs: 100
+2021-10-14 14:17:28,633: INFO): Positive scaling:    0.500
+2021-10-14 14:17:28,633: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 14:17:28,633: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 14:17:28,636: INFO): Train Y: [1279. 1279.]
+2021-10-14 14:17:28,729: INFO): Model build
+2021-10-14 14:18:00,719: INFO): Val loss: 0-     nan
+2021-10-14 14:18:00,719: INFO): Testing
+2021-10-14 14:18:00,838: INFO): Model build
+2021-10-14 14:18:32,864: INFO): Saving history...
+2021-10-14 14:18:32,865: INFO): Best CV:
+2021-10-14 14:18:32,865: INFO): epoch: 1
+2021-10-14 14:18:32,865: INFO): train:    0.492 (0.000)   val:   0.500 (0.000)
+2021-10-14 14:18:32,865: INFO): Test:
+2021-10-14 14:18:32,865: INFO): train:    0.719   val:   0.787
+2021-10-14 14:18:32,865: INFO): Resetting model weights from epoch with best cross-val score
+2021-10-14 14:18:33,092: INFO): TPR:    0.770  TNR:    0.803
+2021-10-14 14:18:33,093: INFO): Saving model weights and model
+2021-10-14 14:18:33,116: INFO): EOT, NCR
+2021-10-14 14:21:39,401: INFO): Start
+2021-10-14 14:21:39,421: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 14:21:39,421: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 14:21:39,421: INFO): weights_are_none False
+2021-10-14 14:21:39,421: INFO): Validation mode: val_test
+2021-10-14 14:21:39,421: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 14:21:39,421: INFO): Epochs: 100
+2021-10-14 14:21:39,421: INFO): Positive scaling:    0.500
+2021-10-14 14:21:39,421: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 14:21:39,422: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 14:21:39,424: INFO): Train Y: [1279. 1279.]
+2021-10-14 14:21:39,531: INFO): Model build
+2021-10-14 14:22:18,494: INFO): Val loss: 23-0.365867
+2021-10-14 14:22:18,495: INFO): Testing
+2021-10-14 14:22:18,688: INFO): Model build
+2021-10-14 14:23:00,629: INFO): Saving history...
+2021-10-14 14:23:00,630: INFO): Best CV:
+2021-10-14 14:23:00,630: INFO): epoch: 24
+2021-10-14 14:23:00,630: INFO): train:    0.978 (0.000)   val:   0.906 (0.000)
+2021-10-14 14:23:00,630: INFO): Test:
+2021-10-14 14:23:00,630: INFO): train:    0.500   val:   0.500
+2021-10-14 14:23:00,630: INFO): Resetting model weights from epoch with best cross-val score
+2021-10-14 14:23:00,798: INFO): TPR:    0.000  TNR:    1.000
+2021-10-14 14:23:00,799: INFO): Saving model weights and model
+2021-10-14 14:23:00,826: INFO): EOT, NCR
+2021-10-14 14:25:39,783: INFO): Start
+2021-10-14 14:25:39,803: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 14:25:39,803: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 14:25:39,803: INFO): weights_are_none False
+2021-10-14 14:25:39,803: INFO): Validation mode: val_test
+2021-10-14 14:25:39,803: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 14:25:39,803: INFO): Epochs: 100
+2021-10-14 14:25:39,803: INFO): Positive scaling:    0.500
+2021-10-14 14:25:39,803: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 14:25:39,804: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 14:25:39,806: INFO): Train Y: [1279. 1279.]
+2021-10-14 14:25:39,905: INFO): Model build
+2021-10-14 14:26:45,882: INFO): Start
+2021-10-14 14:26:45,902: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 14:26:45,902: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 14:26:45,902: INFO): weights_are_none False
+2021-10-14 14:26:45,902: INFO): Validation mode: val_test
+2021-10-14 14:26:45,902: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 14:26:45,903: INFO): Epochs: 100
+2021-10-14 14:26:45,903: INFO): Positive scaling:    0.500
+2021-10-14 14:26:45,903: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 14:26:45,903: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 14:26:45,905: INFO): Train Y: [1279. 1279.]
+2021-10-14 14:26:46,008: INFO): Model build
+2021-10-14 14:38:35,276: INFO): Start
+2021-10-14 14:38:35,296: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 14:38:35,296: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 14:38:35,296: INFO): weights_are_none False
+2021-10-14 14:38:35,296: INFO): Validation mode: val_test
+2021-10-14 14:38:35,296: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 14:38:35,296: INFO): Epochs: 100
+2021-10-14 14:38:35,296: INFO): Positive scaling:    0.500
+2021-10-14 14:38:35,296: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 14:38:35,297: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 14:38:35,299: INFO): Train Y: [1279. 1279.]
+2021-10-14 14:38:35,406: INFO): Model build
+2021-10-14 14:39:11,953: INFO): Val loss: 0-     nan
+2021-10-14 14:39:11,956: INFO): Testing
+2021-10-14 14:39:12,073: INFO): Model build
+2021-10-14 14:39:50,906: INFO): Saving history...
+2021-10-14 14:39:50,907: INFO): Best CV:
+2021-10-14 14:39:50,907: INFO): epoch: 1
+2021-10-14 14:39:50,908: INFO): train:    0.531 (0.000)   val:   0.500 (0.000)
+2021-10-14 14:39:50,908: INFO): Test:
+2021-10-14 14:39:50,908: INFO): train:    0.540   val:   0.500
+2021-10-14 14:39:50,908: INFO): Resetting model weights from epoch with best cross-val score
+2021-10-14 14:39:51,008: INFO): TPR:    0.000  TNR:    1.000
+2021-10-14 14:39:51,009: INFO): Saving model weights and model
+2021-10-14 14:39:51,039: INFO): EOT, NCR
+2021-10-14 14:41:39,652: INFO): Start
+2021-10-14 14:41:39,671: INFO): Config file: config_files/rdkit_ae_zinc.yaml
+2021-10-14 14:41:39,671: INFO): Force resample/reload: False   Force resplit: False
+2021-10-14 14:41:39,671: INFO): weights_are_none False
+2021-10-14 14:41:39,672: INFO): Validation mode: val_test
+2021-10-14 14:41:39,672: INFO): output_core: experiments/211014/rdkit_ae_zinc
+2021-10-14 14:41:39,672: INFO): Epochs: 100
+2021-10-14 14:41:39,672: INFO): Positive scaling:    0.500
+2021-10-14 14:41:39,672: INFO): Data loaded.
+== Config ==
+cross_validation:
+  checkpoint: experiments/211014/rdkit_ae_zinc_splits_chk.pkz
+  random_state: 123
+  test_split: 0.1
+  validation_split: 0.2
+loader_config:
+  data_balance: random
+  data_checkpoint: experiments/211014/rdkit_ae_zinc_data_chk.pkz
+  data_mu: data/zinc15_nondrugs_sample_rdkit_mu.npz
+  data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+  negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+  non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+  positive_file: data/drugs_approved_rdkit.npz
+model_params:
+  dropout_flag: false
+  encoder_hidden_activation: relu
+  encoder_hidden_units: 90
+  encoder_num_layers: 1
+  kind: rdkit_ae
+  metric_balance: false
+  model_dropout: 0.2
+  model_l2: 0.001
+  num_inputs: 1
+
+============
+2021-10-14 14:41:39,672: INFO): Y shape:(3554, 2)  Y sum:[1777. 1777.]
+2021-10-14 14:41:39,674: INFO): Train Y: [1279. 1279.]
+2021-10-14 14:41:39,768: INFO): Model build
+2021-10-14 14:42:15,099: INFO): Val loss: 30-0.375676
+2021-10-14 14:42:15,099: INFO): Testing
+2021-10-14 14:42:15,285: INFO): Model build
+2021-10-14 14:42:55,745: INFO): Saving history...
+2021-10-14 14:42:55,746: INFO): Best CV:
+2021-10-14 14:42:55,746: INFO): epoch: 31
+2021-10-14 14:42:55,746: INFO): train:    0.987 (0.000)   val:   0.898 (0.000)
+2021-10-14 14:42:55,746: INFO): Test:
+2021-10-14 14:42:55,747: INFO): train:    0.977   val:   0.846
+2021-10-14 14:42:55,747: INFO): Resetting model weights from epoch with best cross-val score
+2021-10-14 14:42:55,843: INFO): TPR:    0.837  TNR:    0.854
+2021-10-14 14:42:55,844: INFO): Saving model weights and model
+2021-10-14 14:42:55,884: INFO): EOT, NCR

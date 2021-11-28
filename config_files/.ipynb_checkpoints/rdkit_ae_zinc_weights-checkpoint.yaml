@@ -1,0 +1,24 @@
+#===================
+loader_config:
+   negative_file: data/zinc15_nondrugs_sample_rdkit.npz
+   positive_file: data/drugs_approved_rdkit.npz
+   non_zero_idx: data/zinc15_nondrugs_sample_rdkit_idx.npz
+   data_mu : data/zinc15_nondrugs_sample_rdkit_mu.npz
+   data_std: data/zinc15_nondrugs_sample_rdkit_std.npz
+   data_balance: weights  #choices: cut, random, weights
+#=================   
+model_params:
+   kind: rdkit_ae
+   num_inputs: 1
+   encoder_hidden_units: 90
+   encoder_num_layers: 1
+   encoder_hidden_activation: relu
+   model_dropout: 0.2
+   model_l2: 0.001
+   metric_balance: False 
+   dropout_flag: False
+#===============
+cross_validation:
+   test_split: 0.1
+   validation_split: 0.2
+   random_state: 123
